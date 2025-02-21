@@ -3,66 +3,148 @@
     <head>
         <meta charset="UTF-8">
         <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
-        <img src="profile.png" alt="Jeevakumar A" class="profile-pic">
-        <title>Jeevakumar A - Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <div class="profile-container">
+            <div class="profile-text">
+                <h2>Jeevakumar A</h2>
+                <p>Data Science Enthusiast | AI & ML Developer</p>
+            </div>
+            <img src="images/profile.png" alt="Profile Picture" class="profile-pic">
+            <link rel="stylesheet" href="style.css">
+        </div>
     </head>
     <body>
-        <header>
-            <h1>Jeevakumar A</h1>
-            <p>Data Science Enthusiast | AI & ML Developer</p>
-        </header>
-        <section>
+        <section class="objective-text">
             <h2>Objective</h2>
             <p>As a fresher to explore the Field of Data Science will prepare me well for the future. I am seeking a challenging position in your organization where I can learn new skills, expand my knowledge, and leverage my learning.</p>
         </section>
-        <section>
+        <section class="background-text">
             <h2>Background</h2>
             <p>B.Tech in Artificial Intelligence and Data Science from Sri Venkateshwara College of Engineering.</p>
-            <ul>
-                <li>C/C++, Python, Java</li>
-                <li>Machine Learning, Computer Vision, NLP</li>
-                <li>MySQL, MongoDB, Excel, Power BI</li>
-            </ul>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/c.png" alt="C"></div>
+                    <div class="swiper-slide"><img src="images/cpp.png" alt="C++"></div>
+                    <div class="swiper-slide"><img src="images/python.png" alt="Python"></div>
+                    <div class="swiper-slide"><img src="images/java.png" alt="Java"></div>
+                    <div class="swiper-slide"><img src="images/html.png" alt="HTML"></div>
+                    <div class="swiper-slide"><img src="images/css.png" alt="CSS"></div>
+                    <div class="swiper-slide"><img src="images/mysql.png" alt="MySQL"></div>
+                    <div class="swiper-slide"><img src="images/mongodb.png" alt="MongoDB"></div>
+                    <div class="swiper-slide"><img src="images/powerbi.png" alt="PowerBI"></div>
+                    <div class="swiper-slide"><img src="images/excel.png" alt="Excel"></div>
+                    <div class="swiper-slide"><img src="images/ml.png" alt="ML"></div>
+                    <div class="swiper-slide"><img src="images/nlp.png" alt="NLP"></div>
+                    <div class="swiper-slide"><img src="images/cnn.png" alt="CNN"></div>
+                </div>
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+            
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 5, // Adjust number of visible icons
+                loop: true,
+                autoplay: {
+                    delay: 2000, // Auto-slide every 2 seconds
+                    },
+                });
+            </script>
         </section>
-        <section id="projects">
+        <section id="projects" class="projects">
             <h2>Featured Projects</h2>
             <div class="project">
                 <img src="images/project1.png" alt="Basic ETL Project">
-                <p><b>BASIC-ETL:</b>I led a team of four to develop a basic ETL process. The project was developed using Python, and MySQL was used to store and maintain the data.</p>
+                <a href="https://github.com/jeeva-student/projects/tree/main/ETL" target="_blank">
+                    <h3>Basic-ETL:</h3>
+                </a>
+                <p>Led a team of four to develop a basic ETL process using Python and MySQL for data storage and management.</p>
             </div>
             <div class="project">
                 <img src="images/project2.jpg" alt="Sentiment Analysis">
-                <p><b>Sentiment Analysis:</b> The main objective of this project is to find the sentiment of the given input. This project dataset was collected from hotel reviews, and NLTK packages were used to train and test the model.</p>
+                <a href="https://github.com/jeeva-student/projects/tree/main/sentiment_analysis" target="_blank">
+                    <h3>Sentiment Analysis:</h3></h3>
+                </a>
+                <p>Developed a sentiment analysis model using NLTK, trained and tested on hotel review datasets.</p>
             </div>
             <div class="project">
                 <img src="images/project3.png" alt="TIME SERIES FORECASTING">
-                <p><b>TIME SERIES FORECASTING:</b> The main moto for building this project is to find the trend of the customers who travel through flights. For building the model the dataset used is Air Passengers which contains the monthly wise no. of passengers list. I used three types of ARIMA models to train and test to build the model.</p>
+                <a href="https://github.com/jeeva-student/projects/tree/main/time_series_forecasting" target="_blank">
+                    <h3>Time Series Forecasting:</h3>
+                </a>
+                <p>Developed a model to analyze air travel trends using the Air Passengers dataset, trained and tested with three ARIMA models.</p>
             </div>
             <div class="project">
                 <img src="images/project4.jpg" alt="ML_PRO">
-                <p><b>ML_PRO:</b> ML-pro is a machine learning project, it is a tool which helps to run all types of machine learning operations and algorithms, it also helps to evaluate and display plots based on the given data.</p>
+                <a href="none.html" target="_blank">
+                    <h3>ML_PRO</h3>
+                </a>
+                <p>Developed ML-Pro, a tool for running machine learning operations, evaluating models, and visualizing data through plots.</p>
             </div>
             <div class="project">
                 <img src="images/project5.png" alt="Doctor's Handwriting Prediction">
-                <p><b>Doctor's Handwriting Prediction:</b> I led a team of four to develop the doctor’s handwriting prediction project. The project was developed for a hackathon using Python, and Computer Vision packages using Tensor-flow, Keras and NLP techniques to predict the words more accurately from the doctor’s prescription.</p>
+                <a href="none.html" target="_blank">
+                    <h3>Doctor's Handwriting Prediction:</h3>
+                </a>
+                <p>Led a team of four to develop a doctor's handwriting prediction project for a hackathon using Python, TensorFlow, Keras, and NLP techniques for accurate prescription interpretation.</p>
             </div>
             <div class="project">
-                <img src="images/project6.png" alt="READ_PAPER">
-                <p><b>READ_PAPER:</b> On-going project.</p>
-            </div>
+                <img src="images/project6.png" alt="Project Image">
+                <a href="https://github.com/jeeva-student/projects/tree/main/READ_NEWS" target="_blank">
+                <h3>Read_Paper:</h3></a>
+                <p>Collected news from online platforms and categorized it by genre, organizing it into separate pages for easy access and readability.</p>
+                </div>
         </section>
         <section>
+            <div class="certificates">
+                <div class="cert-item">
+                    <img src="images/python.png" alt="python">
+                    <p>Python</p>
+                    <a href="https://drive.google.com/file/d/1iX5RRKrXgzzDf83XMh0ourVurX3cdNS-/view?usp=sharing" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="images/AI&ML.png" alt="AIML">
+                    <p>AI & ML</p>
+                    <a href="https://drive.google.com/file/d/1b0Hvrq-wxRc0jxfuvmzi5qOdkMX6SjiE/view?usp=sharing" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="images/datascience.png" alt="Datascience">
+                    <p>Master Datascience</p>
+                    <a href="https://drive.google.com/file/d/1M6a2sLNJ7FDisL7E52Y-SuVV8iZWQ03S/view?usp=sharing" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="images/java.png" alt="Java">
+                    <p>Java</p>
+                    <a href="https://drive.google.com/file/d/1Z7_gcPjGVn3wOIYv3gdDMhuWyOvbeyMq/view?usp=sharing" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="images/html.png" alt="Html">
+                    <p>HTML</p>
+                    <a href="https://drive.google.com/file/d/1tZVO0vMZvho05jbVYIG_CyyGmgnGMK7v/view?usp=sharing" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="images/css.png" alt="Css">
+                    <p>CSS</p>
+                    <a href="https://drive.google.com/file/d/1VIG2RyO153zhjJf_SpL9v0EaJn_28BGK/view?usp=sharing" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </section>
+        <section class="resume">
             <h2>Download My Resume</h2>
             <p><a href="A_JEEVAKUMAR_.pdf" download>Click here to download</a></p>
         </section>
         <section>
             <footer>
                 <h2>Get in Touch</h2>
-                <p>Email: <a href="mailto:ajeevakumar060402@gmail.com">ajeevakumar060402@gmail.com</a></p>
-                <p>Phone number: +91 9176616570</p>
-                <p>Linked in: <a href="https://www.linkedin.com/in/a-jeeva-kumar-38315a185/">Linked in</a></p>
-                <p>Github: <a href="https://github.com/jeeva-student/projects">Github</a></p>
+                <div class="contact-container">
+                    <div class="contact-left">
+                        <p>Email: <a href="mailto:ajeevakumar060402@gmail.com">ajeevakumar060402@gmail.com</a></p>
+                        <p>Contact number: +91 9176616570</p>
+                    </div>
+                    <div class="contact-right">
+                        <p>Linked in: <a href="https://www.linkedin.com/in/a-jeeva-kumar-38315a185/">Linked in</a></p>
+                        <p>Github: <a href="https://github.com/jeeva-student/projects">Github</a></p>
+                    </div>
+                </div>
             </footer>
         </section>
     </body>
